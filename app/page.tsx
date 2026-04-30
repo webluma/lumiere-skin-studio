@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MobileMenu } from "./mobile-menu";
 
 const editorialImage = "/images/lumiere-editorial-catalog.png";
 
@@ -88,7 +89,7 @@ const legalLinks = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f8f2eb] text-[#2b211d]">
+    <main className="min-h-screen overflow-x-clip bg-[#f8f2eb] text-[#2b211d]">
       <header className="sticky top-0 z-30 border-b border-[#2b211d]/10 bg-[#f8f2eb]/88 backdrop-blur-xl">
         <nav
           aria-label="Primary navigation"
@@ -113,44 +114,7 @@ export default function Home() {
               Resultados
             </a>
           </div>
-          <div className="md:hidden">
-            <details className="group">
-              <summary className="flex size-10 cursor-pointer list-none items-center justify-center rounded-full border border-[#2b211d]/20 bg-white/70 text-[#2b211d] focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb] [&::-webkit-details-marker]:hidden">
-                <span className="sr-only">Abrir menu</span>
-                <span className="relative block h-4 w-5">
-                  <span className="absolute left-0 top-0 block h-[2px] w-5 bg-current transition group-open:top-[7px] group-open:rotate-45" />
-                  <span className="absolute left-0 top-[7px] block h-[2px] w-5 bg-current transition group-open:opacity-0" />
-                  <span className="absolute left-0 top-[14px] block h-[2px] w-5 bg-current transition group-open:top-[7px] group-open:-rotate-45" />
-                </span>
-              </summary>
-              <div className="absolute right-5 top-full z-40 mt-2 grid min-w-[220px] gap-2 rounded-2xl border border-[#2b211d]/10 bg-[#fffaf4] p-3 text-sm text-[#2b211d] shadow-[0_18px_40px_rgba(43,33,29,0.14)]">
-                <a
-                  href="#treatments"
-                  className="rounded-xl px-3 py-2 hover:bg-[#f3e8de]"
-                >
-                  Tratamentos
-                </a>
-                <a
-                  href="#method"
-                  className="rounded-xl px-3 py-2 hover:bg-[#f3e8de]"
-                >
-                  Metodo
-                </a>
-                <a
-                  href="#results"
-                  className="rounded-xl px-3 py-2 hover:bg-[#f3e8de]"
-                >
-                  Resultados
-                </a>
-                <a
-                  href="#booking"
-                  className="mt-1 rounded-full bg-[#2b211d] px-4 py-2 text-center font-medium text-white"
-                >
-                  Agendar avaliacao
-                </a>
-              </div>
-            </details>
-          </div>
+          <MobileMenu />
           <a
             href="#booking"
             className="hidden rounded-full bg-[#2b211d] px-5 py-3 text-sm font-medium text-white shadow-[0_16px_40px_rgba(43,33,29,0.18)] transition hover:-translate-y-0.5 hover:bg-[#46352e] focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb] md:inline-flex"
@@ -163,34 +127,34 @@ export default function Home() {
       <section id="top" className="relative overflow-hidden">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 pb-18 pt-14 sm:pb-20 md:grid-cols-[1.02fr_0.98fr] md:px-8 md:pb-28 md:pt-20">
           <div className="flex flex-col justify-center">
-            <p className="mb-7 w-fit max-w-full rounded-full border border-[#c7aa94] px-4 py-2 text-xs font-medium uppercase tracking-[0.24em] text-[#8a634d] sm:tracking-[0.28em]">
+            <p className="mb-6 w-fit max-w-full rounded-full border border-[#c7aa94] px-3 py-2 text-[0.65rem] font-medium uppercase tracking-[0.18em] text-[#8a634d] min-[380px]:px-4 sm:mb-7 sm:text-xs sm:tracking-[0.28em]">
               Skincare premium em Sao Paulo
             </p>
-            <h1 className="max-w-4xl font-serif text-[clamp(2.1rem,8.1vw,5.7rem)] leading-[0.88] text-[#2b211d] md:text-[clamp(2.35rem,5.9vw,5.7rem)]">
+            <h1 className="max-w-4xl text-balance font-serif text-[clamp(2.35rem,12vw,4rem)] leading-[0.9] text-[#2b211d] md:text-[clamp(3.35rem,6vw,5.7rem)]">
               Pele luminosa, resultado natural, cuidado preciso.
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#6f5c50] md:text-xl">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-[#6f5c50] sm:mt-8 sm:text-lg sm:leading-8 md:text-xl">
               A Lumiere Skin Studio cria protocolos faciais personalizados para
               quem busca rejuvenescimento elegante, pele saudavel e uma
               experiencia estetica profundamente criteriosa.
             </p>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row sm:mt-10 sm:gap-4">
               <a
                 href="#booking"
-                className="rounded-full bg-[#2b211d] px-7 py-4 text-center text-sm font-semibold text-white shadow-[0_22px_55px_rgba(43,33,29,0.2)] transition hover:-translate-y-0.5 hover:bg-[#46352e] focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb]"
+                className="rounded-full bg-[#2b211d] px-6 py-3.5 text-center text-sm font-semibold text-white shadow-[0_22px_55px_rgba(43,33,29,0.2)] transition hover:-translate-y-0.5 hover:bg-[#46352e] focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb] sm:px-7 sm:py-4"
               >
                 Reservar consulta de pele
               </a>
               <a
                 href="#treatments"
-                className="rounded-full border border-[#2b211d]/20 px-7 py-4 text-center text-sm font-semibold text-[#2b211d] transition hover:-translate-y-0.5 hover:border-[#2b211d]/40 hover:bg-white/45 focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb]"
+                className="rounded-full border border-[#2b211d]/20 px-6 py-3.5 text-center text-sm font-semibold text-[#2b211d] transition hover:-translate-y-0.5 hover:border-[#2b211d]/40 hover:bg-white/45 focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb] sm:px-7 sm:py-4"
               >
                 Ver tratamentos
               </a>
             </div>
           </div>
 
-          <div className="relative min-h-[390px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] shadow-[0_34px_90px_rgba(89,59,42,0.18)] sm:min-h-[500px] sm:rounded-[2rem] md:min-h-[560px]">
+          <div className="relative min-h-[340px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] shadow-[0_34px_90px_rgba(89,59,42,0.18)] min-[420px]:min-h-[430px] sm:min-h-[500px] sm:rounded-[2rem] md:min-h-[560px]">
             <Image
               src={editorialImage}
               alt="Retrato editorial de pele luminosa em clinica estetica premium"
@@ -199,22 +163,22 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, 48vw"
               className="object-cover object-left-top"
             />
-            <div className="absolute bottom-4 left-4 right-4 grid gap-3 rounded-[1.15rem] bg-[#fffaf4]/90 p-4 shadow-[0_18px_50px_rgba(43,33,29,0.16)] backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-5 sm:rounded-[1.35rem] sm:p-5 xl:grid-cols-3">
+            <div className="absolute bottom-4 left-4 right-4 grid gap-3 rounded-[1.15rem] bg-[#fffaf4]/90 p-4 shadow-[0_18px_50px_rgba(43,33,29,0.16)] backdrop-blur-md min-[420px]:grid-cols-3 sm:bottom-5 sm:left-5 sm:right-5 sm:rounded-[1.35rem] sm:p-5">
               <div>
-                <p className="text-2xl font-semibold sm:text-3xl">4.9</p>
-                <p className="text-[0.68rem] uppercase tracking-[0.16em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
+                <p className="text-xl font-semibold sm:text-3xl">4.9</p>
+                <p className="text-[0.62rem] uppercase tracking-[0.14em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
                   satisfacao
                 </p>
               </div>
               <div>
-                <p className="text-2xl font-semibold sm:text-3xl">12k+</p>
-                <p className="text-[0.68rem] uppercase tracking-[0.16em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
+                <p className="text-xl font-semibold sm:text-3xl">12k+</p>
+                <p className="text-[0.62rem] uppercase tracking-[0.14em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
                   peles cuidadas
                 </p>
               </div>
               <div>
-                <p className="text-2xl font-semibold sm:text-3xl">8 anos</p>
-                <p className="text-[0.68rem] uppercase tracking-[0.16em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
+                <p className="text-xl font-semibold sm:text-3xl">8 anos</p>
+                <p className="text-[0.62rem] uppercase tracking-[0.14em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
                   expertise
                 </p>
               </div>
@@ -262,7 +226,7 @@ export default function Home() {
           <div className="mb-14 flex flex-col justify-between gap-8 md:flex-row md:items-end">
             <div>
               <p className="section-kicker text-[#d7b69d]">Catalogo</p>
-              <h2 className="max-w-3xl font-serif text-[1.95rem] leading-[0.98] md:text-[2.85rem]">
+              <h2 className="max-w-3xl text-balance font-serif text-[1.9rem] leading-[0.98] sm:text-[2.25rem] md:text-[2.85rem]">
                 Tratamentos desenhados para evoluir com a sua pele.
               </h2>
             </div>
@@ -275,16 +239,16 @@ export default function Home() {
             {treatments.map((treatment) => (
               <article
                 key={treatment.title}
-                className="group rounded-[1.35rem] border border-white/12 bg-white/[0.055] p-6 transition hover:-translate-y-1 hover:bg-white/[0.09]"
+                className="group rounded-[1.2rem] border border-white/12 bg-white/[0.055] p-5 transition hover:-translate-y-1 hover:bg-white/[0.09] sm:rounded-[1.35rem] sm:p-6"
               >
-                <div className="mb-10 flex items-center justify-between text-sm text-[#d7b69d]">
+                <div className="mb-7 flex items-center justify-between text-sm text-[#d7b69d] sm:mb-10">
                   <span>{treatment.detail}</span>
                   <span className="size-2 rounded-full bg-[#d7b69d]" />
                 </div>
                 <h3 className="font-serif text-[1.3rem] leading-none md:text-[1.6rem]">
                   {treatment.title}
                 </h3>
-                <p className="mt-6 leading-7 text-[#d9c5b7]">
+                <p className="mt-4 leading-7 text-[#d9c5b7] sm:mt-6">
                   {treatment.description}
                 </p>
               </article>
@@ -294,7 +258,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-6 px-5 py-20 sm:gap-8 md:grid-cols-2 md:px-8 md:py-32">
-        <div className="relative min-h-[330px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] sm:min-h-[440px] sm:rounded-[2rem] md:min-h-[520px]">
+        <div className="relative min-h-[280px] overflow-hidden rounded-[1.35rem] bg-[#ead9ca] min-[420px]:min-h-[330px] sm:min-h-[440px] sm:rounded-[2rem] md:min-h-[520px]">
           <Image
             src={editorialImage}
             alt="Tratamento facial premium com tecnologia nao invasiva"
@@ -303,7 +267,7 @@ export default function Home() {
             className="object-cover object-right-top"
           />
         </div>
-        <div className="relative min-h-[330px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] sm:min-h-[440px] sm:rounded-[2rem] md:min-h-[520px]">
+        <div className="relative min-h-[280px] overflow-hidden rounded-[1.35rem] bg-[#ead9ca] min-[420px]:min-h-[330px] sm:min-h-[440px] sm:rounded-[2rem] md:min-h-[520px]">
           <Image
             src={editorialImage}
             alt="Produtos de skincare premium organizados em bancada de marmore"
@@ -322,13 +286,13 @@ export default function Home() {
               Um atendimento calmo, tecnico e orientado por evolucao.
             </h2>
           </div>
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {process.map((item) => (
               <article
                 key={item.step}
-                className="rounded-[1.25rem] border border-[#2b211d]/10 bg-[#f8f2eb] p-6 sm:rounded-[1.5rem] sm:p-7"
+                className="rounded-[1.15rem] border border-[#2b211d]/10 bg-[#f8f2eb] p-5 sm:rounded-[1.5rem] sm:p-7"
               >
-                <p className="mb-10 text-sm font-semibold text-[#b58d72] sm:mb-14">
+                <p className="mb-7 text-sm font-semibold text-[#b58d72] sm:mb-14">
                   {item.step}
                 </p>
                 <h3 className="font-serif text-[1.7rem] md:text-[1.6rem]">
@@ -366,7 +330,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="relative min-h-[380px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] shadow-[0_30px_80px_rgba(89,59,42,0.15)] sm:min-h-[500px] sm:rounded-[2rem] md:min-h-[600px]">
+        <div className="relative min-h-[320px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] shadow-[0_30px_80px_rgba(89,59,42,0.15)] min-[420px]:min-h-[380px] sm:min-h-[500px] sm:rounded-[2rem] md:min-h-[600px]">
           <Image
             src={editorialImage}
             alt="Comparativo estetico sutil de textura e luminosidade da pele"
@@ -401,9 +365,9 @@ export default function Home() {
       </section>
 
       <section id="booking" className="px-5 py-20 md:px-8 md:py-32">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-[1.45rem] bg-[#2b211d] px-5 py-14 text-center text-[#fffaf4] shadow-[0_35px_90px_rgba(43,33,29,0.22)] sm:rounded-[2rem] sm:px-6 sm:py-16 md:px-16 md:py-24">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-[1.25rem] bg-[#2b211d] px-5 py-12 text-center text-[#fffaf4] shadow-[0_35px_90px_rgba(43,33,29,0.22)] sm:rounded-[2rem] sm:px-6 sm:py-16 md:px-16 md:py-24">
           <p className="section-kicker text-[#d7b69d]">Agenda seletiva</p>
-          <h2 className="mx-auto max-w-4xl font-serif text-[1.95rem] leading-[0.98] md:text-[2.85rem]">
+          <h2 className="mx-auto max-w-4xl text-balance font-serif text-[1.85rem] leading-[0.98] sm:text-[2.25rem] md:text-[2.85rem]">
             Comece com uma avaliacao de pele realmente individual.
           </h2>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-[#d9c5b7] sm:text-lg">
@@ -412,7 +376,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:hello@webluma.tech?subject=Agendamento%20de%20avaliacao"
-            className="mt-10 inline-flex rounded-full bg-[#fffaf4] px-8 py-4 text-sm font-semibold text-[#2b211d] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#d7b69d] focus:ring-offset-2 focus:ring-offset-[#2b211d]"
+            className="mt-8 inline-flex w-full justify-center rounded-full bg-[#fffaf4] px-7 py-4 text-sm font-semibold text-[#2b211d] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#d7b69d] focus:ring-offset-2 focus:ring-offset-[#2b211d] min-[420px]:w-auto sm:mt-10 sm:px-8"
           >
             Solicitar horario
           </a>
@@ -430,7 +394,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="footer-block">
+          <div className="footer-block footer-contact">
             <p className="footer-title">Contato</p>
             <a className="footer-link focus-ring" href="mailto:hello@webluma.tech">
               hello@webluma.tech
@@ -444,7 +408,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="footer-block">
+          <div className="footer-block footer-compact">
             <p className="footer-title">Redes sociais</p>
             <div className="footer-link-list">
               {socialLinks.map((item) => (
@@ -455,7 +419,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="footer-block">
+          <div className="footer-block footer-compact">
             <p className="footer-title">Legal</p>
             <div className="footer-link-list">
               {legalLinks.map((item) => (
