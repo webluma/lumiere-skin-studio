@@ -28,10 +28,26 @@ body {
     linear-gradient(180deg, #f8f2eb 0%, #fffaf4 42%, #f8f2eb 100%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  overflow-x: clip;
 }
 
 a {
   text-decoration: none;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+  overflow-wrap: break-word;
 }
 
 ::selection {
@@ -64,7 +80,7 @@ a {
 }
 
 .container {
-  width: min(1120px, calc(100% - 2.5rem));
+  width: min(1120px, calc(100% - 2rem));
   margin-inline: auto;
 }
 

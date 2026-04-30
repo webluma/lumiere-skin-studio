@@ -153,7 +153,7 @@ export default function Home() {
           </div>
           <a
             href="#booking"
-            className="hidden rounded-full bg-[#2b211d] px-5 py-3 text-sm font-medium text-white shadow-[0_16px_40px_rgba(43,33,29,0.18)] transition hover:-translate-y-0.5 hover:bg-[#46352e] focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb] sm:inline-flex"
+            className="hidden rounded-full bg-[#2b211d] px-5 py-3 text-sm font-medium text-white shadow-[0_16px_40px_rgba(43,33,29,0.18)] transition hover:-translate-y-0.5 hover:bg-[#46352e] focus:outline-none focus:ring-2 focus:ring-[#b58d72] focus:ring-offset-2 focus:ring-offset-[#f8f2eb] md:inline-flex"
           >
             Agendar avaliacao
           </a>
@@ -161,9 +161,9 @@ export default function Home() {
       </header>
 
       <section id="top" className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 pb-20 pt-14 md:grid-cols-[1.02fr_0.98fr] md:px-8 md:pb-28 md:pt-20">
+        <div className="mx-auto grid max-w-7xl gap-12 px-5 pb-18 pt-14 sm:pb-20 md:grid-cols-[1.02fr_0.98fr] md:px-8 md:pb-28 md:pt-20">
           <div className="flex flex-col justify-center">
-            <p className="mb-7 w-fit rounded-full border border-[#c7aa94] px-4 py-2 text-xs font-medium uppercase tracking-[0.28em] text-[#8a634d]">
+            <p className="mb-7 w-fit max-w-full rounded-full border border-[#c7aa94] px-4 py-2 text-xs font-medium uppercase tracking-[0.24em] text-[#8a634d] sm:tracking-[0.28em]">
               Skincare premium em Sao Paulo
             </p>
             <h1 className="max-w-4xl font-serif text-[clamp(2.1rem,8.1vw,5.7rem)] leading-[0.88] text-[#2b211d] md:text-[clamp(2.35rem,5.9vw,5.7rem)]">
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative min-h-[560px] overflow-hidden rounded-[2rem] bg-[#ead9ca] shadow-[0_34px_90px_rgba(89,59,42,0.18)]">
+          <div className="relative min-h-[390px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] shadow-[0_34px_90px_rgba(89,59,42,0.18)] sm:min-h-[500px] sm:rounded-[2rem] md:min-h-[560px]">
             <Image
               src={editorialImage}
               alt="Retrato editorial de pele luminosa em clinica estetica premium"
@@ -199,22 +199,22 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, 48vw"
               className="object-cover object-left-top"
             />
-            <div className="absolute bottom-5 left-5 right-5 grid gap-3 rounded-[1.35rem] bg-[#fffaf4]/88 p-5 shadow-[0_18px_50px_rgba(43,33,29,0.16)] backdrop-blur-md sm:grid-cols-3">
+            <div className="absolute bottom-4 left-4 right-4 grid gap-3 rounded-[1.15rem] bg-[#fffaf4]/90 p-4 shadow-[0_18px_50px_rgba(43,33,29,0.16)] backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-5 sm:rounded-[1.35rem] sm:p-5 xl:grid-cols-3">
               <div>
-                <p className="text-3xl font-semibold">4.9</p>
-                <p className="text-xs uppercase tracking-[0.2em] text-[#8a634d]">
+                <p className="text-2xl font-semibold sm:text-3xl">4.9</p>
+                <p className="text-[0.68rem] uppercase tracking-[0.16em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
                   satisfacao
                 </p>
               </div>
               <div>
-                <p className="text-3xl font-semibold">12k+</p>
-                <p className="text-xs uppercase tracking-[0.2em] text-[#8a634d]">
+                <p className="text-2xl font-semibold sm:text-3xl">12k+</p>
+                <p className="text-[0.68rem] uppercase tracking-[0.16em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
                   peles cuidadas
                 </p>
               </div>
               <div>
-                <p className="text-3xl font-semibold">8 anos</p>
-                <p className="text-xs uppercase tracking-[0.2em] text-[#8a634d]">
+                <p className="text-2xl font-semibold sm:text-3xl">8 anos</p>
+                <p className="text-[0.68rem] uppercase tracking-[0.16em] text-[#8a634d] sm:text-xs sm:tracking-[0.2em]">
                   expertise
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-12 px-5 py-24 md:grid-cols-[0.78fr_1.22fr] md:px-8 md:py-32">
+      <section className="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-[0.78fr_1.22fr] md:gap-12 md:px-8 md:py-32">
         <div>
           <p className="section-kicker">Proposta</p>
           <h2 className="section-title">
@@ -239,7 +239,7 @@ export default function Home() {
           </h2>
         </div>
         <div className="grid gap-8 text-[#6f5c50]">
-          <p className="max-w-3xl text-2xl leading-10 text-[#3b2c26]">
+          <p className="max-w-3xl text-xl leading-8 text-[#3b2c26] sm:text-2xl sm:leading-10">
             O foco nao e transformar o rosto. E devolver qualidade de pele,
             proporcao, frescor e confianca com tecnicas sutis, leitura clinica e
             acabamento refinado.
@@ -248,7 +248,7 @@ export default function Home() {
             {differentiators.map((item) => (
               <div
                 key={item}
-                className="border-t border-[#2b211d]/15 pt-5 text-lg leading-7"
+                className="border-t border-[#2b211d]/15 pt-5 text-base leading-7 sm:text-lg"
               >
                 {item}
               </div>
@@ -258,7 +258,7 @@ export default function Home() {
       </section>
 
       <section id="treatments" className="bg-[#2b211d] text-[#fffaf4]">
-        <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-32">
           <div className="mb-14 flex flex-col justify-between gap-8 md:flex-row md:items-end">
             <div>
               <p className="section-kicker text-[#d7b69d]">Catalogo</p>
@@ -271,7 +271,7 @@ export default function Home() {
               avaliacao, necessidade atual e objetivo de medio prazo.
             </p>
           </div>
-          <div className="grid gap-5 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {treatments.map((treatment) => (
               <article
                 key={treatment.title}
@@ -293,8 +293,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-5 py-24 md:grid-cols-2 md:px-8 md:py-32">
-        <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] bg-[#ead9ca]">
+      <section className="mx-auto grid max-w-7xl gap-6 px-5 py-20 sm:gap-8 md:grid-cols-2 md:px-8 md:py-32">
+        <div className="relative min-h-[330px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] sm:min-h-[440px] sm:rounded-[2rem] md:min-h-[520px]">
           <Image
             src={editorialImage}
             alt="Tratamento facial premium com tecnologia nao invasiva"
@@ -303,7 +303,7 @@ export default function Home() {
             className="object-cover object-right-top"
           />
         </div>
-        <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] bg-[#ead9ca]">
+        <div className="relative min-h-[330px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] sm:min-h-[440px] sm:rounded-[2rem] md:min-h-[520px]">
           <Image
             src={editorialImage}
             alt="Produtos de skincare premium organizados em bancada de marmore"
@@ -315,7 +315,7 @@ export default function Home() {
       </section>
 
       <section id="method" className="bg-[#fffaf4]">
-        <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-32">
           <div className="mb-14 max-w-3xl">
             <p className="section-kicker">Metodo Lumiere</p>
             <h2 className="section-title">
@@ -326,9 +326,9 @@ export default function Home() {
             {process.map((item) => (
               <article
                 key={item.step}
-                className="rounded-[1.5rem] border border-[#2b211d]/10 bg-[#f8f2eb] p-7"
+                className="rounded-[1.25rem] border border-[#2b211d]/10 bg-[#f8f2eb] p-6 sm:rounded-[1.5rem] sm:p-7"
               >
-                <p className="mb-14 text-sm font-semibold text-[#b58d72]">
+                <p className="mb-10 text-sm font-semibold text-[#b58d72] sm:mb-14">
                   {item.step}
                 </p>
                 <h3 className="font-serif text-[1.7rem] md:text-[1.6rem]">
@@ -343,7 +343,7 @@ export default function Home() {
 
       <section
         id="results"
-        className="mx-auto grid max-w-7xl gap-12 px-5 py-24 md:grid-cols-[1fr_0.9fr] md:px-8 md:py-32"
+        className="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-[1fr_0.9fr] md:gap-12 md:px-8 md:py-32"
       >
         <div>
           <p className="section-kicker">Resultados</p>
@@ -354,9 +354,9 @@ export default function Home() {
             {testimonials.map((item) => (
               <blockquote
                 key={item.name}
-                className="rounded-[1.35rem] bg-white/65 p-7 shadow-[0_18px_60px_rgba(89,59,42,0.08)]"
+                className="rounded-[1.25rem] bg-white/65 p-6 shadow-[0_18px_60px_rgba(89,59,42,0.08)] sm:rounded-[1.35rem] sm:p-7"
               >
-                <p className="text-lg leading-8 text-[#3b2c26]">
+                <p className="text-base leading-8 text-[#3b2c26] sm:text-lg">
                   “{item.quote}”
                 </p>
                 <footer className="mt-7 text-sm font-semibold uppercase tracking-[0.18em] text-[#8a634d]">
@@ -366,7 +366,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="relative min-h-[600px] overflow-hidden rounded-[2rem] bg-[#ead9ca] shadow-[0_30px_80px_rgba(89,59,42,0.15)]">
+        <div className="relative min-h-[380px] overflow-hidden rounded-[1.45rem] bg-[#ead9ca] shadow-[0_30px_80px_rgba(89,59,42,0.15)] sm:min-h-[500px] sm:rounded-[2rem] md:min-h-[600px]">
           <Image
             src={editorialImage}
             alt="Comparativo estetico sutil de textura e luminosidade da pele"
@@ -378,14 +378,14 @@ export default function Home() {
       </section>
 
       <section className="bg-[#efe0d2]">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 py-24 md:grid-cols-[0.95fr_1.05fr] md:px-8 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-[0.95fr_1.05fr] md:gap-12 md:px-8 md:py-32">
           <div>
             <p className="section-kicker">Studio</p>
             <h2 className="section-title">
               Uma clinica boutique para uma relacao mais inteligente com a pele.
             </h2>
           </div>
-          <div className="grid content-center gap-7 text-lg leading-8 text-[#5d4a40]">
+          <div className="grid content-center gap-6 text-base leading-8 text-[#5d4a40] sm:gap-7 sm:text-lg">
             <p>
               A Lumiere nasceu para atender pessoas que valorizam beleza com
               criterio: um lugar onde tecnologia, toque, cosmetica e escuta se
@@ -400,13 +400,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="booking" className="px-5 py-24 md:px-8 md:py-32">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#2b211d] px-6 py-16 text-center text-[#fffaf4] shadow-[0_35px_90px_rgba(43,33,29,0.22)] md:px-16 md:py-24">
+      <section id="booking" className="px-5 py-20 md:px-8 md:py-32">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-[1.45rem] bg-[#2b211d] px-5 py-14 text-center text-[#fffaf4] shadow-[0_35px_90px_rgba(43,33,29,0.22)] sm:rounded-[2rem] sm:px-6 sm:py-16 md:px-16 md:py-24">
           <p className="section-kicker text-[#d7b69d]">Agenda seletiva</p>
           <h2 className="mx-auto max-w-4xl font-serif text-[1.95rem] leading-[0.98] md:text-[2.85rem]">
             Comece com uma avaliacao de pele realmente individual.
           </h2>
-          <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-[#d9c5b7]">
+          <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-[#d9c5b7] sm:text-lg">
             Em 45 minutos, entendemos sua pele, seu historico e seus objetivos
             para indicar o caminho mais elegante e efetivo.
           </p>
