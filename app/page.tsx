@@ -375,7 +375,7 @@ export default function Home() {
             para indicar o caminho mais elegante e efetivo.
           </p>
           <a
-            href="mailto:hello@webluma.tech?subject=Agendamento%20de%20avaliacao"
+            href="mailto:webluma.dev@gmail.com?subject=Agendamento%20de%20avaliacao"
             className="mt-8 inline-flex w-full justify-center rounded-full bg-[#fffaf4] px-7 py-4 text-sm font-semibold text-[#2b211d] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#d7b69d] focus:ring-offset-2 focus:ring-offset-[#2b211d] min-[420px]:w-auto sm:mt-10 sm:px-8"
           >
             Solicitar horario
@@ -396,8 +396,8 @@ export default function Home() {
 
           <div className="footer-block footer-contact">
             <p className="footer-title">Contato</p>
-            <a className="footer-link focus-ring" href="mailto:hello@webluma.tech">
-              hello@webluma.tech
+            <a className="footer-link focus-ring" href="mailto:webluma.dev@gmail.com">
+              webluma.dev@gmail.com
             </a>
             <a className="footer-link focus-ring" href="tel:+554100000000">
               +55 41 00000-0000
